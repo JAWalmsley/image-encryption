@@ -14,8 +14,14 @@ def image_to_bytes(img):
     p_img = Image.open(img)
     img_b_arr = io.BytesIO()
     p_img.save(img_b_arr, format=p_img.format)
+    print("Image: ", img_b_arr.getvalue())
     return (img_b_arr.getvalue())
-    print("Image: ", img_b_arr)
+
+
+def bytes_to_image(bytes):
+    stream = io.BytesIO(bytes)
+    img = Image.open(stream).convert('RGBA')
+    img.show()
 
 
 def encrypt_data(data, given_password):
@@ -47,6 +53,16 @@ def decrypt_data(data, given_password):
 
     aes = Fernet(key)
     return aes.decrypt(data)
+
+
+def encrypt_image(img, password):
+    bytes = image_to_bytes(img)
+    return encrypt_data(bytes, password)
+
+
+def decrypt_image(data, password):
+    img = decrypt_data(data, password)
+    return bytes_to_image(img)
 
 
 def create_signature(key, data):
