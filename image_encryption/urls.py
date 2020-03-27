@@ -15,8 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+import upload
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('upload/', include('upload.urls'))
+    path('upload/', include('upload.urls')),
+    path('encrypt/', upload.views.encrypt),
+    path('decrypt/', upload.views.decrypt)
 ]

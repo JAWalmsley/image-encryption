@@ -20,8 +20,8 @@ def image_to_bytes(img):
 
 def bytes_to_image(bytes):
     stream = io.BytesIO(bytes)
-    img = Image.open(stream).convert('RGBA')
-    img.show()
+    img = Image.open(stream).convert('RGB')
+    return img
 
 
 def encrypt_data(data, given_password):
@@ -61,8 +61,18 @@ def encrypt_image(img, password):
 
 
 def decrypt_image(data, password):
-    img = decrypt_data(data, password)
-    return bytes_to_image(img)
+    """
+    Returns Base64 representation of decrypted image
+    :param data:
+    :param password:
+    :return:
+    """
+    img_bytes = decrypt_data(data, password)
+    img = bytes_to_image(img_bytes)
+    img_bytesIO = io.BytesIO()
+    img.save(img_bytesIO, format='JPEG')
+    b64 = base64.b64encode(img_bytesIO.getvalue())
+    return b64.decode()
 
 
 def create_signature(key, data):
