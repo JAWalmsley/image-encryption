@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+.upload-form {
+    margin-top: 50px;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+}
+
+form > * {
+    width: 100%;
+}
+
+

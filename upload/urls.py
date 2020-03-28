@@ -4,5 +4,4 @@ from . import views
 urlpatterns = [
     path('encrypt', views.encrypt, name="encrypt"),
     path('decrypt', views.decrypt, name="decrypt"),
-    path('success', views.success, name="success")
 ]

@@ -1,0 +1,21 @@
+{% extends 'header.html' %}
+{% load static %}
+{% block title %} Download {% endblock %}
+<link rel="stylesheet" href="{% static 'upload/download.css' %}">
+{% block content %}
+    <div class="content">
+        <a href="/">
+            <button class="mdc-button mdc-button--outlined">
+                <div class="mdc-button__ripple"></div>
+                <span class="mdc-button__label">Home</span>
+            </button>
+        </a>
+        <br>
+        <a href="data:text/plain;charset=utf-8, {{ result }}" download="{{ filename }}.enc">
+            <button class="mdc-button mdc-button--raised download">
+                <div class="mdc-button__ripple"></div>
+                <span class="mdc-button__label">Download</span>
+            </button>
+        </a>
+    </div>
+{% endblock %}

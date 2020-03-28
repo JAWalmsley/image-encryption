@@ -21,5 +21,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('upload/', include('upload.urls')),
     path('encrypt/', upload.views.encrypt),
-    path('decrypt/', upload.views.decrypt)
+    path('decrypt/', upload.views.decrypt),
+    path('', upload.views.index)
 ]

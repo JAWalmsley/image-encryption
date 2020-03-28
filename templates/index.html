@@ -1,0 +1,32 @@
+{% extends 'header.html' %}
+{% block title %} Home {% endblock title %}
+{% load static %}
+{% block page_style %}
+    <link rel="stylesheet" href="{% static '/upload/index.css' %}">
+{% endblock %}
+{% block content %}
+    {% block navbar %} {% endblock %}
+    <div class="content">
+        <div class="title-wrapper">
+            <svg class="icon" viewBox="-10 0 260 280">
+                <path d="m5.2917 117.08h195.79l-1e-5 142.88h-195.79z"/>
+                <path d="m10.583 117.08s13.229-98.461 92.604-98.461c79.375 0 92.604 98.461 92.604 98.461"/>
+            </svg>
+            <p class="title">Encryptify</p>
+        </div>
+        <div class="buttons">
+            <a href="encrypt">
+                <button class="mdc-button mdc-button--raised">
+                    <div class="mdc-button__ripple"></div>
+                    <span class="mdc-button__label">Encrypt</span>
+                </button>
+            </a>
+            <a href="decrypt">
+                <button class="mdc-button mdc-button--raised">
+                    <div class="mdc-button__ripple"></div>
+                    <span class="mdc-button__label">Decrypt</span>
+                </button>
+            </a>
+        </div>
+    </div>
+{% endblock content %}

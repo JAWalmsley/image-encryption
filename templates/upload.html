@@ -1,15 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Upload Image</title>
-</head>
-<body>
-<form action="" method="post" enctype="multipart/form-data">
-    {% csrf_token %}
-    {{ form }}
-    <input type="submit" value="Submit">
-</form>
-<a href="{{ next_step_url }}"> {{ next_step }}</a>
-</body>
-</html>
+{% extends 'header.html' %}
+{% load static %}
+{% load  myfilters %}
+{% block title %} Upload {% endblock %}
+<link rel="stylesheet" href="{% static '/upload/upload.css' %}">
+{% block content %}
+<div class="content">
+    <a href="{{ next_step_url }}">
+        <button class="mdc-button mdc-button--outlined next-step-button">
+            <div class="mdc-button__ripple"></div>
+            <span class="mdc-button__label">{{ next_step }}</span>
+        </button>
+    </a>
+    <div class="upload-form">
+        <form action="" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {% if form.image %}
+                {{ form.image }}
+            {% elif form.data %}
+                {{ form.data }}
+            {% endif %}
+
+            <div class="mdc-text-field password">
+                {{ form.password|addclass:'mdc-text-field__input' }}
+                <div class="mdc-line-ripple"></div>
+                <label for="text-field-hero-input" class="mdc-floating-label">Password</label>
+            </div>
+            <button class="mdc-button mdc-button--raised next-step-button" type="submit">
+                <div class="mdc-button__ripple"></div>
+                <span class="mdc-button__label">GO</span>
+            </button>
+        </form>
+    </div>
+</div>
+<script>
+    mdc.ripple.MDCRipple.attachTo(document.querySelector('.next-step-button'));
+    mdc.textField.MDCTextField.attachTo(document.querySelector('.mdc-text-field'));</script>
+{% endblock %}

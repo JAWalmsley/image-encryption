@@ -1,0 +1,31 @@
+.title-wrapper {
+    position: absolute;
+    top: 10vh;
+    left: 50vw;
+    transform: translate(-50%, 0%);
+    text-align: center;
+    color: black;
+}
+
+.icon {
+    width: 256px;
+    fill: none;
+    stroke-width: 1.5rem;
+    stroke: #6200ee;
+}
+
+.title {
+    font-size: 64px;
+    font-weight: bolder;
+}
+
+.buttons {
+    position: absolute;
+    top: 70vh;
+    left: 50vw;
+    transform: translate(-50%, 0%);
+}
+
+.buttons > * > * {
+    margin: 5px;
+}
