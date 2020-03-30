@@ -2,25 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7be1bc39-5b36-4e50-b495-febf2505969b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/jackw.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/download-data.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/header.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/static/images/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/static/upload/download.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/static/upload/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/static/upload/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/static/upload/upload.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/templatetags/myfilters.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image_encryption/secret_key.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/image_encryption/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/image_encryption/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image_encryption/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/image_encryption/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/download.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/download-image.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/upload.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/upload.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/encrypt.py" beforeDir="false" afterPath="$PROJECT_DIR$/upload/encrypt.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/upload/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/upload/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/upload/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +121,8 @@
       <workItem from="1585158968398" duration="1957000" />
       <workItem from="1585161340664" duration="1225000" />
       <workItem from="1585334794778" duration="3208000" />
-      <workItem from="1585350245640" duration="13308000" />
+      <workItem from="1585350245640" duration="14052000" />
+      <workItem from="1585533505814" duration="283000" />
     </task>
     <servers />
   </component>
@@ -152,31 +137,32 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1438.-1080.1920.1040/-1920.0.1536.824@0.0.1920.1040" timestamp="1585068692159" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1585361089146">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1585367175702">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1438.-1080.1920.1040/-1920.0.1536.824@0.0.1920.1040" timestamp="1585361089146" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1585361089146">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1438.-1080.1920.1040/-1920.0.1536.824@0.0.1920.1040" timestamp="1585367175702" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1585367175702">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/-1438.-1080.1920.1040/-1920.0.1536.824@0.0.1920.1040" timestamp="1585361089146" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1585361089146">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/-1438.-1080.1920.1040/-1920.0.1536.824@0.0.1920.1040" timestamp="1585367175702" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1585367175702">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/-1438.-1080.1920.1040/-1920.0.1536.824@0.0.1920.1040" timestamp="1585361089146" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1585361089146">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/-1438.-1080.1920.1040/-1920.0.1536.824@0.0.1920.1040" timestamp="1585367175702" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1585367175702">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/-1438.-1080.1920.1040/-1920.0.1536.824@0.0.1920.1040" timestamp="1585361089146" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/-1438.-1080.1920.1040/-1920.0.1536.824@0.0.1920.1040" timestamp="1585367175702" />
     <state x="461" y="163" key="SettingsEditor" timestamp="1585080100160">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="163" key="SettingsEditor/0.0.1920.1040/-1438.-1080.1920.1040/-1920.0.1536.824@0.0.1920.1040" timestamp="1585080100160" />
-    <state x="581" y="299" key="com.intellij.ide.util.TipDialog" timestamp="1585350419056">
+    <state x="581" y="299" key="com.intellij.ide.util.TipDialog" timestamp="1585533510695">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1455" y="237" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1438.-1080.1920.1040/-1920.0.1536.824@-1920.0.1536.824" timestamp="1585068597253" />
     <state x="581" y="299" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1438.-1080.1920.1040/-1920.0.1536.824@0.0.1920.1040" timestamp="1585350419056" />
+    <state x="581" y="299" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1920.0.1536.824/-1438.-1080.1920.1040@0.0.1920.1040" timestamp="1585533510695" />
     <state x="592" y="65" width="736" height="909" key="find.popup" timestamp="1585365507015">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
