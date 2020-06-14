@@ -107,15 +107,3 @@ def decrypt_image(data, password):
     img.save(img_bytesIO, format='JPEG')
     b64 = base64.b64encode(img_bytesIO.getvalue())
     return b64
-
-
-def create_signature(key, data):
-    """
-    Creates a HMAC signature of data
-    :param key: the key to use with HMAC
-    :param data: the data to create a signature of
-    :return: the signature
-    """
-    byte_key = key.encode()
-    message = data.encode()
-    return hmac.new(byte_key, data, hashlib.sha3_512).hexdigest().upper()
