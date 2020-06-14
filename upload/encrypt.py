@@ -1,3 +1,9 @@
+"""
+Name: Jack Walmsley
+Date: 2020-06-10
+Filename: encrypt.py
+Purpose: to encrypt and decrypt image data
+"""
 from PIL import Image
 import io
 
